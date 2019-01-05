@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>小米防丢器</title>
+    <link rel="stylesheet" href="Assets/css/swiper-4.1.6.min.css">
+</head>
+<body>
+<section class="swiper-container swiper-container-part5 part5">
+    <ul class="swiper-wrapper">
+        <li class="swiper-slide"><img src="Assets/upload/banner_a.jpg" alt=""></li>
+        <li class="swiper-slide"><img src="Assets/upload/bar.jpg" alt=""></li>
+        <li class="swiper-slide"><img src="Assets/upload/pic2.jpg" alt=""></li>
+        <li class="swiper-slide"><img src="Assets/upload/banner_a.jpg" alt=""></li>
+        <li class="swiper-slide"><img src="img/camera.jpg" alt=""></li>
+        <li class="swiper-slide"><img src="img/computer.jpg" alt=""></li>
+    </ul>
+    <!-- Add Pagination -->
+    <li class="swiper-pagination swiper-part5" id="part5" style="text-align: left;margin-left: 100px;margin-bottom: 25px"></li>
+    <!-- Add Arrows -->
+    <li class="swiper-button-next"></li>
+    <li class="swiper-button-prev"></li>
+</section>
+<section class="swiper-container swiper-container-part20 part20">
+    <img src="img/ctr_hand.png" alt="" class="ctr_hand">
+    <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+            <img src="img/slide-ctr-photo.png" alt="" class="slide-ctr-photo">
+            <ul class="part20-ul1">
+                <li><h1>遥控自拍</h1></li>
+                <li><h1>解放双手、释放激情</h1></li>
+                <li><p>解放你的双手，给你充分的空间摆Pose，天地即秀场。打开小觅App自带的相机程序，即可轻松自拍。支持绝大部分第三方能够使用音量键作为快门按钮的相机App，如美图秀秀、美颜相机、柚子相机等。</p></li>
+                <li><p style="color: #00adee">实拍效果图</p></li>
+                <li class="photo-person-wrap-1">
+                    <img src="img/photo-person.png" alt="" id="photo-person1">
+                </li>
+            </ul>
+        </li>
+        <li class="swiper-slide">
+            <img src="img/slide-ctr-music.jpg" alt="" class="slide-ctr-photo">
+            <ul class="part20-ul1">
+                <li><h1>遥控音乐</h1></li>
+                <li><h1>随心切歌</h1></li>
+                <li><p>享受音乐，当然要自由，音乐遥控，小觅一键掌控：打开小觅App自带的音乐播放器，即可单击暂停、双击下首，三击上首。广泛支持绝大部分音乐App，网易云音乐、QQ音乐、巨鲸等</p></li>
+                <li><p style="color: #00adee">Android 及 iOS版支持的音乐应用</p></li>
+                <li class="photo-person-wrap"><img src="img/wangyi.png" alt="" id="photo-person2"></li>
+            </ul>
+        </li>
+        <li class="swiper-slide">
+            <img src="img/slide-ctr-ppt.jpg" alt="" class="slide-ctr-photo">
+            <ul class="part20-ul1">
+                <li><h1>遥控PPT</h1></li>
+                <li><h1>放胆自信</h1></li>
+                <li><p>给你无限的空间掌控演讲，挥洒风采。能够支持Mac电脑以及Windows 8.1及以上自带蓝牙4.0的电脑</p></li>
+                <li><p style="color: #00adee">Mac及Windows上支持的幻灯片App</p></li>
+                <li class="photo-person-wrap"><img src="img/ppt-logo.png" alt="" id="photo-person3"></li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Add Pagination -->
+    <li class="swiper-pagination  swiper-part20"  style="text-align: center;margin-bottom: 650px"></li>
+    <!-- Add Arrows -->
+    <li class="swiper-button-next" style="position: absolute;right: 15%;background-color: #C6C6C6;opacity: 0.5;width:47px;border-radius: 50%"></li>
+    <li class="swiper-button-prev" style="position: absolute;left: 15%;background-color: #C6C6C6;opacity: 0.5;width: 47px;border-radius: 50%"></li>
+</section>
+
+<script src="Assets/css/jquery-1.12.1.min.js"></script>
+<script src="Assets/css/swiper-4.1.6.min.js"></script>
+<script>
+　　
+$(function () {
+    var swiper1 = new Swiper('.swiper-container-part5', {
+        pagination: '.swiper-part5',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 4000,
+        autoplayDisableOnInteraction: false,
+        loop: true
+    });
+    $("#part5 span").css({
+        width: '1px',
+        height: '1px',
+        marginLeft: "45px",
+        display: "inline-block",
+        borderRadius: "10px",
+        backgroundColor: "white"
+    });
+    var imgs0 = new Image();
+    imgs0.src = "img/wallet.png";
+    var imgs1 = new Image();
+    imgs1.src = "img/pet.png";
+    var imgs2 = new Image();
+    imgs2.src = "img/key.png";
+    var imgs3 = new Image();
+    imgs3.src = "img/bag.png";
+    var imgs4 = new Image();
+    imgs4.src = "img/camera.png";
+    var imgs5 = new Image();
+    imgs5.src = "img/computer.png";
+    $("#part5 span ").eq(0).html(imgs0);
+    $("#part5 span ").eq(1).html(imgs1);
+    $("#part5 span ").eq(2).html(imgs2);
+    $("#part5 span ").eq(3).html(imgs3);
+    $("#part5 span ").eq(4).html(imgs4);
+    $("#part5 span ").eq(5).html(imgs5);
+
+    $("#part5 span img").css({
+        width: '30px',
+        height: '30px',
+        borderRadius: "0"
+    });
+});
+$(function () {
+var swiper2 = new Swiper('.swiper-container-part20', {
+    pagination: '.swiper-part20',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    paginationClickable: true,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: 4000,
+    autoplayDisableOnInteraction: false,
+    loop: true
+});
+    $(".swiper-part20 span ").css({
+        width:'80px',
+        height:'80px',
+        marginLeft:"85px",
+        display:"inline-block",
+        borderRadius:"10px",
+        backgroundColor:"#F7F7F7"
+    });
+    var imgs0 = new Image();
+    imgs0.src="img/cameraBlue.png";
+    var imgs1 = new Image();
+    imgs1.src="img/musicBlue.png";
+    var imgs2 = new Image();
+    imgs2.src="img/pptBlue.png";
+        $(".swiper-part20  span ").eq(0).html(imgs0);
+        $(".swiper-part20  span ").eq(0).html(imgs0).append("<p style='color: #00AEEF'>遥控自拍</p>");
+        $(".swiper-part20  span ").eq(1).html(imgs1);
+        $(".swiper-part20  span ").eq(1).html(imgs1).append("<p style='color: #00AEEF'>遥控音乐</p>");
+        $(".swiper-part20  span ").eq(2).html(imgs2);
+        $(".swiper-part20  span ").eq(2).html(imgs2).append("<p style='color: #00AEEF'>遥控ppt</p>");
+    $(".swiper-part20  span img").css({
+        width:'80px',
+        height:'70px',
+        borderRadius:"10px"
+    });
+});
+</script></body>
+</html>
